@@ -15,7 +15,7 @@ class AVL {
         Node* left;
         Node* right;
         Node(string ufid, string name): ufid(ufid), name(name), left(nullptr), right(nullptr){};
-        //test
+        //tests
     };
 
     Node* insertNode(Node* root, string name, string ufid);
