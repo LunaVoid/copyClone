@@ -14,7 +14,7 @@ class AVL {
         string name;
         Node* left;
         Node* right;
-        Node(string ufid, string name): ufid(ufid), name(name), left(nullptr), right(nullptr){}
+        Node(string ufid, string name): ufid(ufid), name(name), left(nullptr), right(nullptr){};
 
     };
 
