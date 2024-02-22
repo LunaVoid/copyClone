@@ -69,11 +69,13 @@ TEST_CASE("Testing Height tracking for Tree"){
     AVL* tree = new AVL();
     tree->insertWrapper("Jackery","00000005");
     tree->insertWrapper("dave","00000002");
-    tree->insertWrapper("dave","00000006");
-    tree->insertWrapper("dave","00000003");
+    tree->insertWrapper("zack","00000006");
+    tree->insertWrapper("dack","00000003");
+    tree->insertWrapper("wack","00000007");
     vector<string>levelOrder = tree->levelOrderWrapper();
-    vector<string>comparetor = {"00000005","00000002","00000006","00000003"};
+    vector<string>comparetor = {"00000005","00000002","00000006","00000003","00000007"};
     for(int i = 0; i<levelOrder.size();i++){
+        cout<<levelOrder[i]<<endl;
         REQUIRE(levelOrder[i] == comparetor[i]);
     }
 
