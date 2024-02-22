@@ -1,8 +1,9 @@
-#include <iostream>
-#include "AVL.h"
-using namespace std;
+//
+// Created by Joshua Brunk on 2/19/24.
+//Seperated this out so I could test my other files with catch2.
+#include "helper.h"
 
 int main(){
-	cout << "Hello AVL!\n";
-	return 0;
+    startUp();
+    return 0;
 }
