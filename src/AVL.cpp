@@ -118,8 +118,13 @@ void AVL::inorderTraversal(Node* root, vector<string>& result){
 vector<string> AVL::levelOrderTraversal(queue<AVL::Node*>&test,vector<string>&traverse){
     if(test.front()!=nullptr){
         traverse.push_back(test.front()->ufid);
-        test.push(test.front()->left);
-        test.push(test.front()->right);
+        if(test.front()->left!= nullptr){
+            test.push(test.front()->left);
+        }
+        if(test.front()->right!= nullptr){
+            test.push(test.front()->right);
+        }
+
         //pop the front
         test.pop();
         //We go again to the next level
